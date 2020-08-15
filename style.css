@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: brown;
+}
+.section{
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translateX(-50%),translateY(-50%);
+}
+li{
+  display: inline-block;
+}
+li a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 14px;
+}
+.link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background:black;
+  transition: width .3s;
+}
+.link:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
